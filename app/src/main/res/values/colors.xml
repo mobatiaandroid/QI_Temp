@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7cc4ff</color>
+    <color name="colorPrimaryDark">#4180b5</color>
+    <color name="colorAccent">#DAD9D9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="hint_color">#939393</color>
+
+    <color name="btn_green">#36f281</color>
+    <color name="btn_light_green">#B187BA9B</color>
+
+    <color name="btn_red">#ff6d56</color>
+    <color name="btn_light_red">#9ADA6060</color>
+
+    <color name="progress_light_blue">#8A7CC4FF</color>
+    <color name="progress_blue">#9ABBD6</color>
+
+    <color name="change_pass_background">#4EA1EA</color>
+
+</resources>

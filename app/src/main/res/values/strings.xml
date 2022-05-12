@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name">QI Challenge</string>
+
+
+    <string name="please_check_internet">Please Check your Internet Connection</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up_now">Don\'t Have an account? Sign Up now</string>
+    <string name="email_address">Email</string>
+    <string name="cannot_go_back">Cannot go back unless you finish the Quiz</string>
+    <string name="select_a_student">Select a Student</string>
+
+
+    <string name="isg">ISG</string>
+    <string name="first_otp_alert">Kindly change your password using the ‘Change Password’ option in the settings page.</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_useremail">EMAIL ADDRESS</string>
+    <string name="hint_password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">SIGNUP</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="text_alreay_sign_in">Not Have an account ? Signup Now</string>
+    <string name="text_guestuser">Guest</string>
+    <string name="guestuser">GUEST USER</string>
+    <string name="guest">GUEST</string>
+    <string name="name">User Name</string>
+    <string name="phone_no">Mobile Number</string>
+    <string name="eight_digit_phone_no">8 digit Mobile Number</string>
+    <string name="phone_number">Mobile Number</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="student_id">Student GR No:</string>
+    <string name="email_id">Email ID</string>
+    <string name="confirm_pasword">CONFIRM PASSWORD</string>
+    <string name="register">REGISTER</string>
+    <string name="registration">Registration</string>
+    <string name="alert_heading">Alert</string>
+    <string name="enter_email">Please enter your Email Id</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="resend">Resend Password</string>
+    <string name="resend_verify">Resend Verification Code?</string>
+    <string name="continue_word">CONTINUE</string>
+    <string name="login_success_alert">Successfully logged in</string>
+    <string name="enter_name">Please enter your Name</string>
+    <string name="enter_phoneno">Please enter your Mobile Number</string>
+    <string name="enter_phone_eight_digitno">Please enter 8 digit Mobile Number</string>
+    <string name="enter_studentid">Please enter your Student GR Number</string>
+    <string name="enter_password">Please enter your Password</string>
+    <string name="enter_confirmpassword">Please confirm your password</string>
+    <string name="password_mismatch">Password mismatch</string>
+    <string name="req_success">Successfully registered</string>
+    <string name="resendpassword_login">Resend Password &amp; Login</string>
+    <string name="submit">SUBMIT</string>
+    <string name="frgot_success_alert">Password is successfully sent to your email/mobile.Please check.</string>
+    <string name="settings">Settings</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="dots">:</string>
+    <string name="size">SIZE :</string>
+    <string name="price">PRIZE :</string>
+    <string name="general_circulars">General Circulars</string>
+    <string name="school_library">School Library</string>
+    <string name="report_issues">Report Issues</string>
+    <string name="staff_directory">Staff Directory</string>
+    <string name="school_shop">School Shop</string>
+    <string name="leave_request_submission">Leave Request Submission</string>
+    <string name="newsletters">Newsletters</string>
+    <string name="news_room">News Room</string>
+    <string name="news">News</string>
+    <string name="i_learn">i-Learn</string>
+    <string name="phantas_magoria">Phantasmagoria</string>
+    <string name="class_time_table">Class Timetable</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="canteen_menu">Canteen Menu</string>
+    <!--
+        <string name="student_award">Student Awards</string>
+    -->
+    <string name="competition_results">Competition Results</string>
+    <string name="curriculam_courses">Syllabus &amp; Affiliation</string>
+    <!--
+        <string name="curriculam_courses">Curriculum &amp; Courses</string>
+    -->
+    <string name="exam_timetable">Exam Timetables</string>
+    <string name="time_table">Time Table</string>
+    <string name="exam_schedule">Exam Schedule</string>
+    <string name="events">Events</string>
+    <string name="calendar">Calendar</string>
+    <string name="notifications">Notifications</string>
+    <string name="gallery">Gallery</string>
+    <string name="error_heading">Alert</string>
+    <string name="already_requested">Already requested.</string>
+    <string name="common_error">Cannot continue. Please try again later</string>
+    <string name="nomoreinfo">No more information available.</string>
+    <string name="invalid_otp">Invalid Verification Code.</string>
+    <string name="common_error_loading_pdf">Failed to load the pdf. Please try again later.</string>
+    <string name="common_error_loading_link">Failed to load the link. Please try again later.</string>
+    <string name="common_error_loading_page">Failed to load. Please try again later.</string>
+    <string name="internet_error">Cannot continue at this time. Please check your internet connectivity.</string>
+    <string name="mandatory_field">Mandatory field</string>
+    <!--
+        <string name="no_internet">Please check your internet connectivity</string>
+    -->
+    <string name="no_internet">Please check you Internet connection and try again later.</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="already_registered">User is already registered</string>
+    <string name="invalid_grno">Invalid Member ID/Phone number</string>
+
+    <!--    <string name="invalid_grno">Invalid GR Number</string>-->
+
+    <string name="invalid_user">Invalid User</string>
+    <string name="no_student_available">No student available. Please contact school admin.</string>
+    <string name="registration_successful">Password has been sent to the registered mobile number and email. Kindly enter the password to complete registration.</string>
+    <string name="regstered_butnoemail">Registration Successful. You will receive an OTP. The entered email id is not linked with the GR number. Please contact the school and update your email.</string>
+    <!--
+        <string name="regstered_butnoemail">Registration Successful, but entered email is not linked with the provided student GR Number.</string>
+    -->
+    <string name="invalid_usr_pswd">Invalid Phone Number / password</string>
+    <string name="signup_success_alert">Successfully registered.Please check your Email for further details.</string>
+    <string name="missing_parameter">Field is missing.</string>
+    <string name="success">Success</string>
+    <string name="enter_current_password">Please enter Current Password</string>
+    <string name="enter_new_password">Please enter New Password</string>
+    <string name="enter_confirm_password">Please enter Confirm Password</string>
+    <string name="succ_pswd">Password successfully changed</string>
+    <string name="no_datafound">No data found</string>
+    <string name="no_notification">No notification available</string>
+    <string name="phone_not_found">Phone number not available.</string>
+    <string name="email_not_found">Email Id not available.</string>
+    <string name="no_eventfound">No events available for this class group.</string>
+    <string name="no_clubfound">No Sports &amp; Activities available for this class group. Please contact the class teacher for further details.</string>
+    <!--
+        <string name="no_clubfound">No Clubs available for this class group. Please contact the class teacher for further details.</string>
+    -->
+    <string name="alertnotfound">No notifications in this section, please check all sections under the dropdown for received notifications</string>
+    <string name="no_alertfound">No notifications right now.</string>
+    <string name="no_alert_commonfound">No common notifications right now.</string>
+    <string name="loading">Loading</string>
+    <string name="contact_no">Contact Numbers</string>
+    <string name="mainschool">Main School</string>
+    <string name="elementaryschool">Elementary School</string>
+    <string name="fax">Fax</string>
+    <string name="school">School</string>
+    <string name="principal">Principal</string>
+    <string name="sec_to_princi">Secretary to Principal</string>
+    <string name="manager_admin">Manager Admin</string>
+    <string name="email">Email</string>
+    <string name="reg_form_not_available">Registration form not available.</string>
+    <string name="parent_form_not_available">Parent consent form not available.</string>
+    <string name="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non tellus nunc. Nullam tempus urna vel dignissim viverra. Morbi tempus faucibus fringilla. Proin finibus dictum ultricies. Cras sit amet pretium diam. Proin quis ex dolor. Nulla vitae velit in neque iaculis lobortis non quis urna. Quisque eu finibus dui, ac aliquet ex. Phasellus mollis maximus ultrices. Aenean eget nunc eu leo ullamcorper laoreet. Phasellus eu imperdiet dui. Aliquam at nisl leo. Quisque cursus magna at lectus pellentesque tincidunt. Vestibulum bibendum id lectus ut fringilla. Nullam nec sem felis.</string>
+    <string name="more_images">MORE IMAGES</string>
+    <string name="more_videos">MORE VIDEOS</string>
+    <string name="view_images">VIEW IMAGES</string>
+    <string name="view_videos">VIEW VIDEOS</string>
+    <string name="test_msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non tellus nunc. Nullam tempus urna vel dignissim viverra.</string>
+    <string name="alert_event_reg_paid">This event needs a paid registration. Please contact the school for attending this event .</string>
+    <string name="ok">Ok</string>
+    <string name="succ_leave_submission">Successfully submitted your leave request.</string>
+    <string name="enter_subject">Enter subject</string>
+    <string name="enter_startdate">Select start date</string>
+    <string name="enter_enddate">Select end date</string>
+    <string name="enter_reason">Enter reason for your absence</string>
+    <string name="succ_add_student">Successfully added your child</string>
+    <string name="student_exists">Student already exists</string>
+    <string name="error_occurreds">Error occurred</string>
+    <string name="resend_otp">Please verify otp</string>
+    <string name="enter_otp">Enter otp</string>
+    <string name="succ_prof">Successfully updated your profile</string>
+    <!--    <array name="calendar_row_colors">-->
+    <!--        <item>@color/cal_row_1</item>-->
+    <!--        <item>@color/cal_row_2</item>-->
+    <!--        <item>@color/cal_row_3</item>-->
+    <!--        <item>@color/cal_row_4</item>-->
+    <!--    </array>-->
+
+    <!-- calendar strings -->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <string name="jan_short">JAN</string>
+    <string name="feb_short">FEB</string>
+    <string name="mar_short">MAR</string>
+    <string name="apr_short">APR</string>
+    <string name="may_short">MAY</string>
+    <string name="jun_short">JUN</string>
+    <string name="jul_short">JUL</string>
+    <string name="aug_short">AUG</string>
+    <string name="sep_short">SEP</string>
+    <string name="oct_short">OCT</string>
+    <string name="nov_short">NOV</string>
+    <string name="dec_short">DEC</string>
+    <string name="add_cal_success">Event added to device calendar</string>
+    <string name="del_cal_success">Event removed from device calendar</string>
+    <string name="add_all_cal_success">Added all events to device calendar</string>
+    <string name="del_all_cal_success">Removed all events from device calendar</string>
+    <string name="no_evnt_details">Not enough details to add to calendar</string>
+    <string name="month">MONTH</string>
+    <string name="year">YEAR</string>
+    <string name="day">DAY</string>
+    <string name="when">When:</string>
+    <string name="where">Where:</string>
+    <string-array name="month31">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="month30">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="day">
+        <item>DAY</item>
+    </string-array>
+    <string-array name="month29">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+    </string-array>
+    <string-array name="month28">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+    </string-array>
+    <string name="verifyAlert">You will receive the verification code via email &amp; mobile number. Enter verification code and continue.</string>
+
+    <string name="terms_of_use">The design of this website and its content is © Indian School AlGhubra , all rights are reserved. Nothing in this website should be taken as conferring any licence or right to use any trademark displayed on this website without the prior written approval of the trademark owner.\r\n\r\nYou may print off or download content as permitted under the fair dealing provisions of the Copyright Designs and Patents Act 1988 (as amended) (sections 28 to 30) for the purposes of viewing it on your computer, research for non-commercial purposes, private study, criticism, review and news reporting, provided that you do not alter it in any way and acknowledge us as the source of the content and the copyright owners. All other use or copying of any of the contents of this site, other than as expressly permitted by us or permitted by law, is prohibited.</string>
+    <string name="play">Play</string>
+    <string name="verify_info">Enter verification code here that you received via email &amp; mobile number. If you didn\'t get verification code yet, click on \'Resend verification code\'.</string>
+    <string name="pause">Pause</string>
+    <string name="disclaimer">Please do not share your username and password with anyone. The school is not responsible for any disclosure of information due to sharing of credentials. Please read \‘Terms of Use\’ in Settings page before using the application.</string>
+    <!--
+        <string name="disclaimer">Please do not share your user name or password with anyone. The school is not responsible for any disclosure of your wards information due to sharing of credentials.</string>
+    -->
+
+    <!--force update-->
+
+    <string name="new_version_available">New Version Available</string>
+    <string name="force_update">There is a newer version available for download! Please update the app by visiting the Google Play Store.</string>
+    <string name="pleasewait">Please wait...</string>
+    <string name="no_quiz_available">No Quiz Available</string>
+    <string name="starts_in">Starts in</string>
+    <string name="each_question_have_15_seconds">You have 15 seconds to answer each question.</string>
+    <string name="totally_you_have">Totally, you have to answer 10 questions.</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="user_already_loggedin">User already Logged in other device</string>
+    <string name="once_you_have_completed_a_question_you_cannot_go_back_to_retry">3. Once you have completed a question, you cannot go back to retry.</string>
+    <string name="a_star_is_awarded_once_you_answer_all_the_questions_correctly">4. A star is awarded once you answer all the questions correctly.</string>
+    <string name="leaderboard_displays_the_top_scorers_only">5. Leaderboard displays the top scorers only.</string>
+    <string name="RegisterTxt">Do not have an account? Register now</string>
+    <string name="default_notification_channel_id" />
+
+</resources>

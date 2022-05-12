@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/point_image_reaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/single_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/point_image_reaction"
+        app:srcCompat="@drawable/bg_exit_sub" />
+
+    <TextView
+        android:id="@+id/single_msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:maxWidth="200dp"
+        android:gravity="center"
+        android:text="@string/please_check_internet"
+        app:layout_constraintBottom_toBottomOf="@+id/point_image_reaction"
+        app:layout_constraintEnd_toEndOf="@+id/point_image_reaction"
+        app:layout_constraintStart_toStartOf="@+id/point_image_reaction"
+        app:layout_constraintTop_toTopOf="@+id/point_image_reaction" />
+
+    <TextView
+        android:id="@+id/single_ok_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/single_ok_btn"
+        app:layout_constraintEnd_toEndOf="@+id/single_ok_btn"
+        app:layout_constraintStart_toStartOf="@+id/single_ok_btn"
+        app:layout_constraintTop_toTopOf="@+id/single_ok_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_background"
+    tools:context=".LeaderBoard.LeaderBoardActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="385dp"
+        android:layout_height="545dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+        app:layout_constraintStart_toStartOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="@+id/logout_icon"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/imageView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toBottomOf="@+id/imageView121"
+        app:srcCompat="@drawable/cloud" />
+
+
+    <ImageView
+        android:id="@+id/imageView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintStart_toStartOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book_open" />
+
+
+    <ImageView
+        android:id="@+id/imageView141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leaderboard_icon"
+        app:layout_constraintTop_toTopOf="@+id/imageView131"
+        app:srcCompat="@drawable/tel" />
+
+
+    <TextView
+        android:id="@+id/LEADER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Notification"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView121" />
+
+    <TextView
+        android:id="@+id/NotificationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:maxWidth="280dp"
+        app:layout_constraintEnd_toEndOf="@+id/LEADER"
+        app:layout_constraintStart_toStartOf="@+id/LEADER"
+        app:layout_constraintTop_toBottomOf="@+id/LEADER" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

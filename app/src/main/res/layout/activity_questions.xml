@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_background"
+    tools:context=".QuizQuestion.Questions">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="85dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteY="118dp">
+
+        <LinearLayout
+            android:id="@+id/CounterLayout"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_btn_background"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/people"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/UsersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="385dp"
+            android:layout_height="545dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/logout_icon"
+            app:srcCompat="@drawable/book" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:srcCompat="@drawable/cloud" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/book_open" />
+
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/leaderboard_icon"
+            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            app:srcCompat="@drawable/tel" />
+
+        <TextView
+            android:id="@+id/Question_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:maxWidth="300dp"
+            android:text="Qustion"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/Question_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Question_txt"/>
+        <RelativeLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Question_Image" >
+            <TextView
+                android:id="@+id/textcurrent_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/playbutton"
+                android:text="0.00"/>
+            <ImageView
+                android:id="@+id/playbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/pause_button"
+                />
+            <SeekBar
+                android:id="@+id/seebbar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/playbutton"
+                android:progressTint="@color/colorPrimary"
+                android:thumbTint="@color/white"
+                />
+            <TextView
+                android:id="@+id/duration_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:text="2.00"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/OptBtn_1"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editext_background"
+            android:onClick="ClickAction"
+            android:text="Button"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
+
+
+        <Button
+            android:id="@+id/optBtn_2"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editext_background"
+            android:onClick="ClickAction"
+            android:text="Button"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/OptBtn_1"
+            app:layout_constraintStart_toStartOf="@+id/OptBtn_1"
+            app:layout_constraintTop_toBottomOf="@+id/OptBtn_1" />
+
+
+        <Button
+            android:id="@+id/optBtn_3"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editext_background"
+            android:onClick="ClickAction"
+            android:text="Button"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/optBtn_2"
+            app:layout_constraintStart_toStartOf="@+id/optBtn_2"
+            app:layout_constraintTop_toBottomOf="@+id/optBtn_2" />
+
+
+        <Button
+            android:id="@+id/optBtn_4"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editext_background"
+            android:onClick="ClickAction"
+            android:text="Button"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/optBtn_3"
+            app:layout_constraintStart_toStartOf="@+id/optBtn_3"
+            app:layout_constraintTop_toBottomOf="@+id/optBtn_3" />
+
+
+        <TextView
+            android:id="@+id/timer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="92dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="35dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="85dp" />
+
+        <TextView
+            android:id="@+id/question_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/circle_image"
+            tools:layout_editor_absoluteY="180dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="117dp" />
+
+        <LinearLayout
+            android:id="@+id/starId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/starCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/starImg"
+                app:layout_constraintEnd_toStartOf="@+id/starImg"
+                app:layout_constraintTop_toTopOf="@+id/starImg" />
+
+            <ImageView
+                android:id="@+id/starImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/star"
+                app:layout_constraintBottom_toBottomOf="@+id/ChangeStudentLayout"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/ChangeStudentLayout" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="385dp"
+            android:layout_height="545dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/logout_icon"
+            app:srcCompat="@drawable/book" />
+
+        <ImageView
+            android:id="@+id/imageView151"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/imageView121"
+            app:srcCompat="@drawable/cloud" />
+
+
+        <ImageView
+            android:id="@+id/imageView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView31"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/book_open" />
+
+
+        <ImageView
+            android:id="@+id/imageView141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/leaderboard_icon"
+            app:layout_constraintTop_toTopOf="@+id/imageView131"
+            app:srcCompat="@drawable/tel" />
+
+        <TextView
+            android:id="@+id/explanation_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:maxWidth="300dp"
+            android:text="Question"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView121"
+            app:layout_constraintStart_toStartOf="@+id/imageView121"
+            app:layout_constraintTop_toBottomOf="@+id/imageView121" />
+        <ImageView
+            android:id="@+id/explanation_ques_image"
+            android:layout_width="230dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView121"
+            app:layout_constraintStart_toStartOf="@+id/imageView121"
+            app:layout_constraintTop_toBottomOf="@+id/explanation_ques" />
+        <RelativeLayout
+            android:id="@+id/linearlayout_audio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/explanation_ques_image" >
+            <TextView
+                android:id="@+id/textcurrent_time_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/playbutton_audio"
+                android:textColor="@color/white"
+                android:text="0.00"/>
+            <ImageView
+                android:id="@+id/playbutton_audio"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/pause_button"
+                />
+            <SeekBar
+                android:id="@+id/seekbar_audio"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/playbutton_audio"
+                android:progressTint="@color/colorPrimary"
+                android:thumbTint="@color/white"
+                />
+            <TextView
+                android:id="@+id/duration_time_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:text="2.00"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/explantion_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="300dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Question Explanation"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_audio" />
+
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/explantion_txt">
+
+            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                android:id="@+id/progress_bar_1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="291dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="false"
+                android:max="2"
+                android:maxHeight="30dp"
+                android:minHeight="30dp"
+                android:progress="50"
+                app:backgroundColor="@color/progress_light_blue"
+                app:progressColor="@color/progress_blue" />
+
+            <TextView
+                android:id="@+id/progress_ans_txt1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progress_bar_1"
+                android:layout_alignLeft="@+id/progress_bar_1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Answer" />
+
+            <TextView
+                android:id="@+id/progress_score_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/progress_bar_1"
+                android:layout_alignRight="@id/progress_bar_1"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/R2"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/R1">
+
+            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                android:id="@+id/progress_bar_2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="291dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="false"
+                android:max="2"
+                android:maxHeight="30dp"
+                android:minHeight="30dp"
+                android:progress="50"
+                app:backgroundColor="@color/progress_light_blue"
+                app:progressColor="@color/progress_blue" />
+
+            <TextView
+                android:id="@+id/progress_ans_txt2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progress_bar_2"
+                android:layout_alignLeft="@+id/progress_bar_2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Answer" />
+
+            <TextView
+                android:id="@+id/progress_score_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/progress_bar_2"
+                android:layout_alignRight="@id/progress_bar_2"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/R3"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/R2">
+
+            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                android:id="@+id/progress_bar_3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="291dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="false"
+                android:max="2"
+                android:maxHeight="30dp"
+                android:minHeight="30dp"
+                android:progress="50"
+                app:backgroundColor="@color/progress_light_blue"
+                app:progressColor="@color/progress_blue" />
+
+            <TextView
+                android:id="@+id/progress_ans_txt3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progress_bar_3"
+                android:layout_alignLeft="@+id/progress_bar_3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Answer" />
+
+            <TextView
+                android:id="@+id/progress_score_txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/progress_bar_3"
+                android:layout_alignRight="@id/progress_bar_3"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/R4"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView31"
+            app:layout_constraintStart_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/R3">
+
+            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                android:id="@+id/progress_bar_4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="291dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="false"
+                android:max="2"
+                android:maxHeight="30dp"
+                android:minHeight="30dp"
+                android:progress="50"
+                app:backgroundColor="@color/progress_light_blue"
+                app:progressColor="@color/progress_blue" />
+
+            <TextView
+                android:id="@+id/progress_ans_txt4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progress_bar_4"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Answer" />
+
+            <TextView
+                android:id="@+id/progress_score_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/progress_bar_4"
+                android:layout_alignRight="@id/progress_bar_4"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

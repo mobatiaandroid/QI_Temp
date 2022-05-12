@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "852375903003",
+    "firebase_url": "https://quiz-qi.firebaseio.com",
+    "project_id": "quiz-qi",
+    "storage_bucket": "quiz-qi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852375903003:android:5777af702c5722aeb8d1be",
+        "android_client_info": {
+          "package_name": "com.qi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852375903003-99qhkk36nq82ol1ral78kil2hcoduai8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKmzT3tTo7yScU_RMzpLiLkwfnryohVIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852375903003-99qhkk36nq82ol1ral78kil2hcoduai8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

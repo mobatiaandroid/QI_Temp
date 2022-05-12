@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://ec2-52-6-24-229.compute-1.amazonaws.com/</domain>
+        <domain includeSubdomains="true">http://qzapp.meitsystems.com/</domain>
+        <domain includeSubdomains="true">http://memberqz.mobatia.com/</domain>
+        <domain includeSubdomains="true">https://qiapp.meitsystems.com/</domain>
+        <domain includeSubdomains="true">http://memberqz.mobatia.com:8081/</domain>
+    </domain-config>
+</network-security-config>

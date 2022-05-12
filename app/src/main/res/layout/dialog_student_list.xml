@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:id="@+id/allREL"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp">
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true">
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recycler_view_social_media"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:overScrollMode="never"
+              android:scrollbars="vertical" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:layout_below="@+id/recycler_view_social_media">
+              <Button
+                  android:id="@+id/btn_dismiss"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:text="Select Student"
+                  android:gravity="center"
+                  android:background="@color/colorPrimaryDark"
+                  android:textColor="#ffffffff"
+                  />
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+
+  </RelativeLayout>
+    <ImageView
+        android:id="@+id/closebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

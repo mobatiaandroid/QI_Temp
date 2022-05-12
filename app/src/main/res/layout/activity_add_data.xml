@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.AddData">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Category"/>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Question Number"/>
+
+        <Spinner
+            android:id="@+id/Question_no"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Question_edt"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="Question"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress|textMultiLine|textCapWords"
+            android:lines="20"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            app:layout_constraintEnd_toEndOf="@+id/category"
+            app:layout_constraintStart_toStartOf="@+id/category"
+            app:layout_constraintTop_toBottomOf="@+id/category" />
+
+        <EditText
+            android:id="@+id/opt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Option 1"
+            android:inputType="textPersonName|textCapWords"
+            app:layout_constraintEnd_toEndOf="@+id/Question_edt"
+            app:layout_constraintStart_toStartOf="@+id/Question_edt"
+            app:layout_constraintTop_toBottomOf="@+id/Question_edt" />
+
+        <EditText
+            android:id="@+id/opt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Option 2"
+            android:inputType="textPersonName|textCapWords"
+            app:layout_constraintEnd_toEndOf="@+id/opt_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/opt_1"
+            app:layout_constraintTop_toBottomOf="@+id/opt_1" />
+
+        <EditText
+            android:id="@+id/opt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Option 3"
+            android:inputType="textPersonName|textCapWords"
+            app:layout_constraintEnd_toEndOf="@+id/Question_edt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/opt_2"
+            app:layout_constraintTop_toBottomOf="@+id/opt_2" />
+
+        <EditText
+            android:id="@+id/opt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Option 4"
+            android:inputType="textPersonName|textCapWords"
+            app:layout_constraintEnd_toEndOf="@+id/Question_edt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/opt_3"
+            app:layout_constraintTop_toBottomOf="@+id/opt_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select Correct Option"/>
+        <Spinner
+            android:id="@+id/Correct_opt"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Correct Option"
+            android:inputType="textCapWords|textCapWords"
+            android:maxLength="1"
+            app:layout_constraintEnd_toEndOf="@+id/Question_edt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/opt_4"
+            app:layout_constraintTop_toBottomOf="@+id/opt_4" />
+
+
+
+        <Button
+            android:id="@+id/enter_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enter Data"
+            app:layout_constraintEnd_toEndOf="@+id/Correct_opt"
+            app:layout_constraintStart_toStartOf="@+id/Correct_opt"
+            app:layout_constraintTop_toBottomOf="@+id/Correct_opt" />
+    </LinearLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

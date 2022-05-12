@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_exit" />
+
+    <ImageView
+        android:id="@+id/double_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/double_cancel_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/bg_exit_sub" />
+
+    <ImageView
+        android:id="@+id/double_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/double_ok_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/double_ok_btn"
+        app:layout_constraintTop_toTopOf="@+id/double_ok_btn"
+        app:srcCompat="@drawable/bg_exit_sub" />
+
+    <TextView
+        android:id="@+id/double_msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:maxWidth="200dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/double_ok_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/double_ok_btn"
+        app:layout_constraintEnd_toEndOf="@+id/double_ok_btn"
+        app:layout_constraintStart_toStartOf="@+id/double_ok_btn"
+        app:layout_constraintTop_toTopOf="@+id/double_ok_btn" />
+
+    <TextView
+        android:id="@+id/double_cancel_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/double_cancel_btn"
+        app:layout_constraintEnd_toEndOf="@+id/double_cancel_btn"
+        app:layout_constraintStart_toStartOf="@+id/double_cancel_btn"
+        app:layout_constraintTop_toTopOf="@+id/double_cancel_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
